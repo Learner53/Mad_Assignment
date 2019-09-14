@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ESTELLE</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <img src="images/logo2.gif" class="content__gif" />
+      <div class="content__color"></div>
+      <header>
+        <div class="main-video">
+          <video autoplay loop muted class="main-video__content">
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="images/logov2.png" alt="Logo" class="logo" />
+              </a>
+            </li>
+            <li><a href="#">HOW IT WORKS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li>
+              <a href="#"><button>GET EARLY ACCESS</button></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="animate">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="message">
+            <h3>Simplify your wealth management with</h3>
+            <ul>
+              <li class="hide">Single Application</li>
+              <li class="hide">Verified Avenues</li>
+              <li class="hide">Trusted Advisors</li>
+              <li class="hide">Informed Decisions</li>
+            </ul>
+          </div>
+        </div>
+        <img
+          class="content__dots"
+          src="images/dots-pattern.png"
+          alt="Dot-Patterns"
+        />
+        <footer>
+          <ul>
+            <li><h6>&copy; 2006 Estelle Wealth, All Rights Reserved.</h6></li>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+          </ul>
+        </footer>
+      </header>
+    </div>
+    <div class="message_shown">
+      <h6>
+        How does managing and enjoying your wealth wisely sound to you ?<br />Signup
+        and get an exclusive preview of the future of wealth management.
+      </h6>
+      <br />
+      <input type="email" placeholder="Enter your Email" />
+    </div>
+  </body>
+  <script>
+    $(function() {
+      loopRecursive();
+    });
+    function loopRecursive() {
+      $(".message ul li").each(function(i) {
+        var t = $(this);
+        setTimeout(function() {
+          t.removeClass("hide");
+          setTimeout(function() {
+            t.addClass("hide");
+            if (i == $(".message ul li").length - 1) loopRecursive();
+          }, 3600);
+        }, 3700 * i);
+      });
+    }
+  </script>
+</html>

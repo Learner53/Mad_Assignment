@@ -1,0 +1,260 @@
+@import url("animate.css");
+* {
+  margin: 0;
+}
+.hide {
+  display: none;
+  transition: 0.1s;
+}
+.message ul {
+  list-style: none;
+}
+.message ul li {
+  font-size: 70px;
+  font-weight: 300;
+  margin-left: -40px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.content__gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  z-index: 21;
+  animation: hiden 0.2s backwards 2.5s;
+  opacity: 0;
+}
+.content__color {
+  background: linear-gradient(to right, #35717c 55%, transparent 55%);
+  background-position: left bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  animation: backgroundShow 1s backwards 2.7s;
+}
+
+header {
+  right: 0;
+}
+.main-video {
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+.main-video__content {
+  height: 100vh;
+}
+
+.logo {
+  width: 170px;
+}
+nav ul li:first-child {
+  transform: translateY(30%);
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 2%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+nav {
+  margin: 2.7% 3.5% 0;
+  position: relative;
+  z-index: 15;
+  animation: shown 0.5s backwards 3s;
+}
+nav ul li:last-child {
+  border: 1px solid rgba(255, 255, 255, 0.98);
+  background: transparent;
+  padding: 0.7% 1.2%;
+  margin-left: 35%;
+}
+a button {
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  border: 0;
+}
+
+.animate span:nth-child(1) {
+  position: absolute;
+  bottom: 456px;
+  left: 170px;
+  width: 2px;
+  height: 50px;
+  background: linear-gradient(to right, #1779ff, #1779ff);
+  animation: animate1 0.2s backwards 2.8s;
+}
+
+.animate span:nth-child(2) {
+  position: absolute;
+  top: 150px;
+  left: 170px;
+  width: 750px;
+  height: 2px;
+  background: linear-gradient(to right, #1779ff, #1779ff);
+  animation: animate2 0.4s backwards 3s;
+}
+
+.animate span:nth-child(3) {
+  position: absolute;
+  top: 150px;
+  left: 920px;
+  width: 2px;
+  height: 390px;
+  background: linear-gradient(to right, #1779ff, #1779ff);
+  animation: animate3 0.3s backwards 3.5s;
+}
+
+.animate span:nth-child(4) {
+  position: absolute;
+  top: 540px;
+  right: 444px;
+  width: 752px;
+  height: 2px;
+  background: linear-gradient(to right, #1779ff, #1779ff);
+  animation: animate4 0.4s backwards 3.8s;
+}
+
+.animate span:nth-child(5) {
+  position: absolute;
+  bottom: 116px;
+  left: 170px;
+  width: 2px;
+  height: 50px;
+  background: linear-gradient(to right, #1779ff, #1779ff);
+  animation: animate5 0.2s backwards 4.3s;
+}
+.animate span:nth-child(6) {
+  position: absolute;
+  bottom: 308px;
+  left: 136px;
+  height: 76px;
+  background: linear-gradient(to right, #1779ff, #1779ff);
+  animation: animate6;
+  animation-delay: 6.98s;
+  animation-duration: 7.4s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.animate span:nth-child(7) {
+  position: absolute;
+  bottom: 203px;
+  left: 136px;
+  height: 100px;
+  z-index: 20;
+  background: linear-gradient(to right, #1779ff, #1779ff);
+  animation: animate7 0.4s backwards 3s;
+}
+.animate {
+  z-index: 15;
+}
+.animate .message {
+  position: absolute;
+  top: 230px;
+  left: 140px;
+  color: #fff;
+  z-index: 13;
+  animation: shown 0.5s backwards 3s;
+}
+.animate span {
+  z-index: 15;
+}
+h3 {
+  font-size: 29px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.message__sub {
+  font-size: 70px;
+  font-weight: 300;
+  display: block;
+}
+.message_shown {
+  position: absolute;
+  top: 60%;
+  left: 31%;
+  transform: translate(-52%, -50%);
+  z-index: 16;
+  animation: shown 0.1s backwards 3.4s;
+}
+h6 {
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 13px;
+  color: #fff;
+}
+.message_shown input::placeholder {
+  color: rgba(224, 202, 202, 0.87);
+}
+
+.message_shown input {
+  background: transparent;
+  width: 530px;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  padding: 0.6% 0 1.2% 1%;
+}
+.content__dots {
+  width: 46vw;
+  height: 33vh;
+  top: 68%;
+  left: 54.5%;
+  position: absolute;
+  animation: shown 0.5s backwards 3s;
+}
+/* Footer Section*/
+footer {
+  animation: shown 0.5s backwards 3s;
+}
+footer ul {
+  position: absolute;
+  width: 100vw;
+  top: 94%;
+  left: 6%;
+  z-index: 20;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+footer ul li:first-child {
+  padding-right: 55%;
+}
+footer ul li h6 {
+  font-size: 15px;
+}
+footer ul li:nth-child(2) a,
+footer ul li:nth-child(3) a,
+footer ul li:nth-child(4) a,
+footer ul li:nth-child(5) a {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 16px;
+}
+footer ul li:nth-child(2),
+footer ul li:nth-child(3),
+footer ul li:nth-child(4),
+footer ul li:nth-child(5) {
+  padding-right: 1.5%;
+}
